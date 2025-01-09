@@ -1,0 +1,1 @@
+Template.o: Template.s

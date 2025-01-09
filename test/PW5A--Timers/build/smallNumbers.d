@@ -1,0 +1,1 @@
+smallNumbers.o: smallNumbers.s
