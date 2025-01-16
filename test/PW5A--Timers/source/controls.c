@@ -24,7 +24,7 @@ void handleTouchPad()
             x = (touch.px-24)/16;
             y = (touch.py-23)/16;
 
-            // update the matrix only if the static matrix allows writing
+            // Update the matrix only if the static matrix allows writing
             if(staticMatrix[y][x] == 0){  // Ensure the spot is writable
                 if(state == STATE_DELETE){
                     dynamicMatrix[y][x] = 0;  // Clear the cell if delete state is active
@@ -39,16 +39,16 @@ void handleTouchPad()
             Audio_PlaySoundEX(SFX_SWISH);
         }
 
-        // selection bar
+        // Selection bar
         if(touch.px>200 && touch.px<255){
-            // delete
-            // avoid instant update of the cell
+            // Delete
+            // Avoid instant update of the cell
             x = -1;
             if(touch.py>164){
                 state = STATE_DELETE;
                 newy = 169;
             }
-            // numbers
+            // Numbers
             else{
                 y = (touch.py-9)/16;
                 if(y>=9){

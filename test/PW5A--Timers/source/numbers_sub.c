@@ -8,6 +8,7 @@
 #define MATRIX_SIZE 9
 
 // Define the matrices
+// This is the initial matrix used in the sudoku game
 int staticMatrix[MATRIX_SIZE][MATRIX_SIZE] = {
     {0, 0, 0, 2, 0, 0, 0, 4, 6},
     {5, 6, 2, 0, 0, 0, 0, 8, 0},
@@ -20,6 +21,7 @@ int staticMatrix[MATRIX_SIZE][MATRIX_SIZE] = {
     {8, 1, 0, 0, 0, 2, 0, 0, 0}
 };
 
+// This is the matrix representing the sudoku solution
 int answerMatrix[MATRIX_SIZE][MATRIX_SIZE] = {
     {9, 8, 1, 2, 5, 7, 3, 4, 6},
     {5, 6, 2, 9, 3, 4, 1, 8, 7},
@@ -32,6 +34,8 @@ int answerMatrix[MATRIX_SIZE][MATRIX_SIZE] = {
     {8, 1, 3, 7, 4, 2, 6, 9, 5}
 };
 
+// This is the dynamic matrix used in the game. It is initialized like the staticMatrix, 
+// and is updated throughout the game. It is therefore a dynamic matrix
 int dynamicMatrix[MATRIX_SIZE][MATRIX_SIZE] = {
     {0, 0, 0, 2, 0, 0, 0, 4, 6},
     {5, 6, 2, 0, 0, 0, 0, 8, 0},
@@ -46,7 +50,7 @@ int dynamicMatrix[MATRIX_SIZE][MATRIX_SIZE] = {
 
 
 /*
-// easy static matrix for fast check jsut write a 5 in the empty box
+// easy static matrix for fast check the code, jsut write a 5 in the empty box
 int staticMatrix[MATRIX_SIZE][MATRIX_SIZE] = {
     {9, 8, 1, 2, 5, 7, 3, 4, 6},
     {5, 6, 2, 9, 3, 4, 1, 8, 7},
