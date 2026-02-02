@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "chrono_display.h": "c",
-        "sudoku_init.h": "c",
-        "stdio.h": "c"
-    }
-}
