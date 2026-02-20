@@ -40,3 +40,5 @@ The game logic interacts directly with hardware-level abstractions.
 - Designing efficient control flow in microcode
 - Handling I/O via memory-mapped registers
 - Debugging at architectural level
+  
+![Image_Game](https://github.com/user-attachments/assets/78fc3853-5565-4e9a-97e1-ca312b5bbcbe)
